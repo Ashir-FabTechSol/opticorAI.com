@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Opticore AI - Home</title>
+  
+  <link rel="icon" href="statics/media/images/logo.jpg" type="image/jpg">
+  <title>OpticoreAI</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="statics/css/style.css">
@@ -12,94 +14,182 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 fixed-top">
     <div class="container-fluid px-lg-5">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="statics/media/images/logo.jpg" alt="IPO Projects Logo" class="img-fluid bg-white p-2 me-2 navbar-logo" style="object-fit:contain;">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="statics/media/images/logo.jpg" alt="OpticoreAI Logo" class="img-fluid bg-white p-2 me-2 navbar-logo" style="object-fit:contain;">
       </a>
       <button class="custom-toggler d-lg-none btn-lg" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #d94948; color: #fff;">
         ☰
       </button>
       <div class="collapse navbar-collapse justify-content-end bg-transparent-lg navbackground py-4 px-5 rounded-4" id="navbarNav">
         <ul class="navbar-nav align-items-center-lg mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#challenges">Challenges</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#solution">Solution</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#partners">Partners</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-normal" href="#benefits">Benefits</a></li>
         </ul>
-        <a href="#contact" class="btn btn-danger rounded-pill px-4 py-2 ms-lg-3 ms-0 animated-btn fw-normal" style="font-weight:500;">Contact Us</a>
+        <a href="#features" class="btn btn-danger rounded-pill px-4 py-2 ms-lg-3 ms-0 animated-btn fw-normal" style="font-weight:500;">Get Started</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero Section with Background Video -->
-  <section id="who" class="hero-section position-relative d-flex align-items-center justify-content-center text-center" style="min-height: 100vh; padding-top: 110px;">
-    <video class="hero-bg-video position-absolute w-100 h-100 top-0 start-0 object-fit-cover" src="statics/media/videos/this is a oil refinery plant - lifestyle (720p, h264).mp4" autoplay loop muted playsinline style="z-index:0;"></video>
-    <div class="hero-overlay"></div>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section position-relative d-flex align-items-center justify-content-center text-center" style="min-height: 100vh; padding-top: 110px;">
+    <video class="hero-bg-video position-absolute w-100 h-100 top-0 start-0 object-fit-cover" src="statics/media/videos/Data Analytics Background 1 - SehCode Consultancy Services LLP (720p, h264).mp4" autoplay loop muted playsinline style="z-index:0;"></video>
+    <div class="hero-overlay" style="position:absolute;inset:0;background:linear-gradient(rgba(1,22,39,0.55), rgba(1,22,39,0.55));z-index:1;"></div>
     <div class="container hero-content py-5" style="position:relative;z-index:3;">
-      <h2 class="fw-bold mb-3 display-6 display-md-5 display-lg-4 display-xl-3">The Ultimate Oil and Gas Performance Solution</h2>
-      <h1 class="fw-bold mb-4 display-4 display-md-3 display-lg-1">Integrated Plant<br>Optimization (IPO)</h1>
+      <h1 class="fw-bold mb-3 display-4 display-md-3 text-white" data-anim="fade-up">Streamline and Optimize Your Daily Task Management</h1>
+      <p class="lead text-white-50 mb-4" data-anim="fade-up">Real-time KPIs, employee accountability, and automated performance tracking on one platform.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap" data-anim="zoom-in">
+        <a href="#overview" class="btn btn-light rounded-pill px-4 px-md-5 py-2 py-md-3 fw-semibold">Learn More</a>
+        <a href="#features" class="btn btn-danger rounded-pill px-4 px-md-5 py-2 py-md-3 fw-semibold">Explore Features</a>
+      </div>
     </div>
   </section>
 
-  <!-- Who We Are -->
-  <section id="about" class="py-5 bg-white">
-    <div class="container py-lg-5">
-      <h2 class="text-center mb-4 display-3 display-md-2 fw-bold">Innovative Ingenuity</h2>
-      <p class="text-justify text-lg-center mx-auto mb-4 fs-6 fs-md-5 lh-base" style="max-width:900px;">
-        IPO is a groundbreaking, first software of its kind in the oil and gas industry. Proudly made in Oman and developed by a team of talented Omani Engineers that showcases their ingenuity and expertise. With its innovative features and localized approach, IPO represents a significant milestone in the advancement of technology and optimization strategies, solidifying Oman's position as a hub for cutting-edge software solutions in the field of plant production optimization.
+  <!-- Overview -->
+  <section id="overview" class="py-5 bg-white" data-anim="fade-up">
+    <div class="container py-lg-4">
+      <h2 class="text-center mb-4 fw-bold">Overview</h2>
+      <p class="mx-auto mb-3 fs-6 fs-md-5 lh-base" style="max-width:1000px; text-align:justify;">
+        OpticoreAI is an Oman-based IT company focused on building modern enterprise software that streamlines daily task management, drives accountability, and aligns teams with organizational goals.
       </p>
-      <div class="d-flex justify-content-center">
-        <a href="https://www.youtube.com/watch?list=TLGGKNXnCyYv3RYwMTA0MjAyNQ&v=sbmAqVvpOVE&feature=youtu.be" class="btn btn-danger rounded-pill px-4 px-md-5 py-2 py-md-3 animated-btn fw-bold fs-6 fs-md-5">LEARN MORE</a>
-      </div>
+      <p class="mx-auto fs-6 fs-md-5 lh-base" style="max-width:1000px; text-align:justify;">
+        In today’s competitive business environment, traditional reporting is time-consuming and error‑prone. Our platform delivers real-time visibility and data-driven insights to help you move beyond outdated processes.
+      </p>
     </div>
   </section>
 
- <!-- Features Section -->
- <section id="services" class="py-5 position-relative features_section">
-    <div class="container py-lg-5">
-      <div class="row py-5">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h2 class="fw-bold mb-4">Optimizing Plant<br>Performance with Ease</h2>
-          <p class="fw-semibold fs-5 mb-4">
-            IPO's objective is to optimize plant performance and improve its overall efficiency. To achieve this, it requires understanding on how efficient your current equipment and/or system is. This can be truly accomplished through integrating smart software and advanced analytics.
-          </p>
-          <hr class="left-hr" >
+  <!-- Challenges -->
+  <section id="challenges" class="py-5 position-relative" data-anim="fade-up">
+    <div class="container py-lg-4">
+      <div class="row">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <h2 class="fw-bold mb-3">Streamline and Optimize Your Daily Tasks Management</h2>
+          <p class="text-muted">Key challenges we address:</p>
         </div>
-        <div class="col-lg-6">
-          <div>
-            <h3 class="fs-5 mb-4 fw-semibold">
-              IPO is a game-changing software that offers comprehensive plant's performance optimization capabilities that gives you a greater insight and control over the production load and the various factors that affect it. By analyzing real-time data from all connected equipment, this innovative software will:
-            </h3>
-            <p class="fs-5 fw-semibold">
-              Improve plant's overall performance – IPO Software boasts an advanced reporting system that accurately captures and generates detailed reports and leverage real-time data analysis for work performance and financial evaluation.
-            </p>
-          </div>
+        <div class="col-lg-7">
+          <ul class="fs-6">
+            <li>It's challenging to gather and use data effectively for making business decisions due to the presence of multiple outdated systems in the portfolio.</li>
+            <li>Provide management with a real-time dashboard of company and departmental KPIs.</li>
+            <li>Enable employees to log daily tasks and progress toward goals.</li>
+            <li>Support data-driven decisions by analyzing trends and identifying improvement areas.</li>
+            <li>Automate performance tracking to support yearly evaluations.</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
-  <!-- Safety Section -->
-  <section id="projects" class="py-5 position-relative safety_section bg-white">
-    <div class="container py-lg-5">
-      <div class="row justify-content-center py-lg-5">
-        <div class="col-12 text-center">
-          <h2 class="fw-bold text-black mb-4">Proactive Safety Measure</h2>
-          <h3 class="text-black fs-5 fw-semibold mx-auto text-justify text-lg-center" style="max-width: 1000px;">
-            Enhance Unparalleled safety features – The software detects abnormal conditions and identify specific areas of concern. This enables quick diagnosis of faults, recommend solution and streamline proactive maintenance approach.
-          </h3>
-        </div>
-      </div>
+  <!-- Approach -->
+  <section id="approach" class="py-5 bg-white" data-anim="fade-up">
+    <div class="container py-lg-4">
+      <h2 class="fw-bold text-center mb-4">A Holistic Approach</h2>
+      <p class="mx-auto mb-3 fs-6 fs-md-5 lh-base" style="max-width:1000px; text-align:justify;">
+        Addressing these challenges necessitates a holistic approach beyond individual solutions. To stay ahead in a competitive landscape, companies must adopt digital processes and operating model transformations.
+      </p>
+      <p class="mx-auto fs-6 fs-md-5 lh-base" style="max-width:1000px; text-align:justify;">
+        As an Oman-based technology partner, OpticoreAI is committed to helping organizations modernize operations and overcome their most pressing digital challenges.
+      </p>
     </div>
   </section>
 
-  <!-- Monitoring Performance Section -->
-  <section id="projects" class="pt-1 pb-5" style="background: #146a80;">
-    <div class="container-fluid">
-      <h2 class="fw-bold text-white text-center mb-5">Cutting-Edge Monitoring Performance</h2>
+  <!-- Solution -->
+  <section id="solution" class="py-5" style="background:#146a80;" data-anim="fade-up">
+    <div class="container py-lg-4">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <video class="img-fluid w-100 rounded shadow" src="statics/media/videos/Data Analytics Background 1 - SehCode Consultancy Services LLP (720p, h264).mp4" autoplay loop muted playsinline></video>
+          <h2 class="fw-bold text-white mb-3">Introducing LYNEX by OpticoreAI</h2>
+          <p class="text-white-75 mb-3">LYNEX is a product of OpticoreAI — a cloud-based solution purpose-built for daily task management and performance visibility.</p>
+          <p class="text-white-75 mb-0" style="text-align: justify;">It connects your operational tools and data sources into a secure, unified workspace — delivering actionable insights into tasks, teams, and KPIs to support informed, real-time decisions.</p>
         </div>
         <div class="col-lg-6">
-          <p class="text-white fs-5 mb-0 mx-auto text-justify text-lg-start ps-lg-3" style="line-height:1.6;">
-            <b>IPO</b> (Integrated Plant Optimization) is a software designed to revolutionize the way oil and gas plants monitor and enhance their performance. This innovative solution is seamlessly integrated with the plant <b>Distributed Control System (DCS)</b> system, enabling it to collect and analyze data in real time. By leveraging this data, IPO provides invaluable insights into the financial aspects of the plant's operations, allowing companies to make informed decisions and maximize their profitability in USD dollars.
-          </p>
+          <img class="img-fluid w-100 rounded shadow" src="statics/media/images/lynex pic.png" loading="lazy" decoding="async" alt="LYNEX by OpticoreAI">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Carousel -->
+  <section id="partners" class="py-5 bg-white" data-anim="fade-up">
+    <div class="container py-lg-4">
+      <h2 class="fw-bold text-center mb-4">Our Partners</h2>
+      <p class="text-center text-muted mb-4">Trusted by forward-thinking organizations.</p>
+      <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" aria-label="Partners logos carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4 align-items-center justify-content-center">
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center d-none d-lg-block">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-4 align-items-center justify-content-center">
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center d-none d-lg-block">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivers -->
+  <section id="delivers" class="py-5 bg-white" data-anim="fade-up">
+    <div class="container py-lg-4">
+      <h2 class="fw-bold text-center mb-5">OpticoreAI Platform Delivers</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="h-100 p-4 border rounded-3">
+            <h5 class="fw-semibold mb-2">Reporting and analytics</h5>
+            <p class="mb-0" style="text-align: justify;">Generate visual reports and perform detailed statistical analysis to track employees’ performance, measure improvements, and communicate results effectively.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100 p-4 border rounded-3">
+            <h5 class="fw-semibold mb-2">Remote accessibility</h5>
+            <p class="mb-0" style="text-align: justify;">Access the software platform securely from anywhere, allowing for remote monitoring and decision-making on the go.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="h-100 p-4 border rounded-3">
+            <h5 class="fw-semibold mb-2">Actionable insights</h5>
+            <p class="mb-0" style="text-align: justify;">Gain valuable insights from aggregated data to identify optimization opportunities, improve processes, and drive efficiency.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -107,52 +197,85 @@
 
   
 
-  <!-- Call to Action Section -->
-  <section class="py-5 bg-white">
-    <div class="container">
-      <div class="row align-items-center justify-content-between flex-column flex-md-row">
-        <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
-          <h2 class="fw-bold mb-0" style="font-size:1.3rem;">Need Help with Easier Industrial Solutions? We Are Experts!</h2>
+  <!-- Features & Benefits -->
+  <section id="features" class="py-5" data-anim="fade-up">
+    <div class="container py-lg-4">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Features</h2>
+          <ul class="fs-6">
+            <li>Automated performance scorecards based on logged tasks and KPIs.</li>
+            <li>Real-time dashboards for managers and team leads.</li>
+            <li>Exportable reports (Excel, PDF) for management meetings.</li>
+            <li>Accessible from desktop and mobile devices.</li>
+            <li>Notifications for pending tasks and performance alerts.</li>
+          </ul>
         </div>
-        <div class="col-md-4 text-md-end text-center">
-          <a href="#contact" class="btn btn-danger rounded-pill px-lg-5 px-3 py-2 animated-btn fw-semibold" style="font-size:1rem;">CONNECT WITH US!</a>
+        <div class="col-lg-6" id="benefits">
+          <h2 class="fw-bold mb-3">Potential Benefits</h2>
+          <ul class="fs-6">
+            <li>Enhanced data visibility with comprehensive, real-time view into daily tasks.</li>
+            <li>Centralized platform: Access department and individual KPIs linked to organizational goals.</li>
+            <li>Smarter OPEX: lower staff costs, improve supplier management, extend asset life.</li>
+            <li>Improved company and management performance with real-time dashboards.</li>
+            <li>Improved productivity: employees focus on high-value tasks with clear accountability.</li>
+            <li>Early performance review automation: saves HR and managers’ time by consolidating data throughout the year.</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-white py-5" style="background-color: #011627;">
-    <div class="container pt-lg-4">
-      <div class="row text-center text-md-start align-items-start mb-4">
-        <div class="col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
-          <img src="statics/media/images/logo.jpg" alt="IPO Projects Logo" width="150" class="mb-3 bg-white p-2 rounded-2">
-        </div>
-        <div class="col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
-          <h5 class="fw-semibold mb-3">Our Company</h5>
-          <ul class="list-unstyled">
-            <li><a href="#who" class="text-white text-decoration-none">Who We Are</a></li>
-            <li><a href="#about" class="text-white text-decoration-none">About Company</a></li>
-            <li><a href="#services" class="text-white text-decoration-none">Services We Provide</a></li>
-            <li><a href="#projects" class="text-white text-decoration-none">What We Have Done</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start">
-          <h5 class="fw-semibold mb-3">Contact Us</h5>
-          <p class="mb-1">Tel No. +968 9888 8892</p>
-          <p class="mb-0">Address: Sultanate of Oman</p>
-        </div>
+ 
+
+
+
+  
+<!-- Footer -->
+<footer class="text-white py-5" style="background-color: #011627;">
+  <div class="container pt-lg-4">
+    <div class="row text-center text-md-start align-items-start mb-4">
+      <div class="col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+        <img src="statics/media/images/logo.jpg" alt="IPO Projects Logo" width="150" class="mb-3 bg-white p-2 rounded-2">
       </div>
-      <div class="row mt-4">
-        <div class="col-md-6 text-center text-md-start">
-          <small>Copyright &copy; 2025 OpticoreAI.com</small>
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <small>Powered by OpticoreAI.com</small>
-        </div>
+      <div class="col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+        <h5 class="fw-semibold mb-3">Our Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="#overview" class="text-white text-decoration-none">Overview</a></li>
+          <li><a href="#challenges" class="text-white text-decoration-none">Challenges</a></li>
+          <li><a href="#solution" class="text-white text-decoration-none">Solution</a></li>
+          <li><a href="#partners" class="text-white text-decoration-none">Partners</a></li>
+          <li><a href="#features" class="text-white text-decoration-none">Features & Benefits</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start">
+        <h5 class="fw-semibold mb-3">Contact Us</h5>
+        <p class="mb-1">Tel No. +968 9888 8892</p>
+        <p class="mb-0">Address: Salalah, Sultanate of Oman</p>
       </div>
     </div>
-  </footer>
+    <div class="row mt-4">
+      <div class="col-md-6 text-center text-md-start">
+        <small>Copyright &copy; 2025 OpticoreAI.com</small>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <small>Powered by OpticoreAI.com</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <script src="statics/js/home.js"></script>
 

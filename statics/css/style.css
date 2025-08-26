@@ -1,11 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
 
+/* ========== Design Tokens ========== */
+:root {
+  --color-bg: #f9f8f8;
+  --color-text: #011627;
+  --color-primary: #d94948;
+  --color-primary-strong: #c13c3b;
+  --color-accent: #146a80;
+  --color-surface: #ffffff;
+  --color-muted: #6b7b8e;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 40px rgba(0,0,0,0.18);
+
+  --scroll-offset: 110px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* ========== Base Styles ========== */
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  background: #f9f8f8;
-  color: #011627;
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 img, video {
   max-width: 100%;
@@ -14,6 +39,11 @@ img, video {
 }
 .text-justify {
   text-align: justify;
+}
+
+/* Offset anchors for fixed navbar */
+section[id] {
+  scroll-margin-top: var(--scroll-offset);
 }
 
 /* ========== Navbar ========== */
@@ -29,6 +59,18 @@ img, video {
   transition: max-width 0.2s, max-height 0.2s;
 }
 
+.navbar .nav-link {
+  transition: color 0.2s ease;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:focus {
+  color: var(--color-primary) !important;
+}
+.navbar.scrolled {
+  backdrop-filter: saturate(120%) blur(8px);
+  background-color: rgba(1, 22, 39, 0.6) !important;
+}
+
 
 /* ========== Hero Section ========== */
 .hero-section {
@@ -41,7 +83,7 @@ img, video {
 .hero-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(46, 46, 54, 0.5);
+  background: linear-gradient(rgba(1,22,39,0.55), rgba(1,22,39,0.55));
   z-index: 1;
 }
 .hero-content {
@@ -57,6 +99,14 @@ img, video {
   transform: translateY(-4px) scale(1.05);
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
+.btn-danger {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+.btn-danger:hover {
+  background-color: var(--color-primary-strong) !important;
+  border-color: var(--color-primary-strong) !important;
+}
 
 /* ========== Section Titles ========== */
 .section-title {
@@ -65,6 +115,74 @@ img, video {
 }
 .bg-light-alt {
   background: #f8f9fa;
+}
+
+/* ========== Content Helpers ========== */
+#delivers .border {
+  border-color: rgba(1, 22, 39, 0.08) !important;
+  box-shadow: var(--shadow-sm);
+}
+#features ul li,
+#benefits ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== Partners ========== */
+#partners .partners-logo {
+  max-height: 64px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+#partners .partners-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+#partners .carousel-control-prev-icon,
+#partners .carousel-control-next-icon {
+  filter: invert(1) grayscale(100%);
+}
+
+/* ========== Animations ========== */
+[data-anim] {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition-property: transform, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+[data-anim].in-view {
+  opacity: 1;
+  transform: none;
+}
+/* Variants */
+[data-anim="fade-up"] {
+  transform: translateY(16px);
+}
+[data-anim="fade-in"] {
+  transform: none;
+}
+[data-anim="zoom-in"] {
+  transform: scale(0.96);
+}
+[data-anim="slide-left"] {
+  transform: translateX(20px);
+}
+[data-anim="slide-right"] {
+  transform: translateX(-20px);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-anim] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* ========== Features Section ========== */
