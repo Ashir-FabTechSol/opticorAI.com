@@ -13,11 +13,11 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 fixed-top">
-    <div class="container-fluid px-lg-5">
+    <div class="container px-lg-5">
       <a class="navbar-brand d-flex align-items-center" href="#home">
-        <img src="statics/media/images/logo.jpg" alt="OpticoreAI Logo" class="img-fluid bg-white p-2 me-2 navbar-logo" style="object-fit:contain;">
+        <img src="statics/media/images/logo.jpg" alt="OpticoreAI Logo" class="img-fluid bg-white p-2 me-2 navbar-logo">
       </a>
-      <button class="custom-toggler d-lg-none btn-lg" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="background-color: #d94948; color: #fff;">
+      <button class="custom-toggler d-lg-none btn-lg me-3" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         ☰
       </button>
       <div class="collapse navbar-collapse justify-content-end bg-transparent-lg navbackground py-4 px-5 rounded-4" id="navbarNav">
@@ -29,16 +29,16 @@
           <li class="nav-item"><a class="nav-link text-white fw-normal" href="#features">Features</a></li>
           <li class="nav-item"><a class="nav-link text-white fw-normal" href="#benefits">Benefits</a></li>
         </ul>
-        <a href="#features" class="btn btn-danger rounded-pill px-4 py-2 ms-lg-3 ms-0 animated-btn fw-normal" style="font-weight:500;">Get Started</a>
+        <a href="#features" class="btn btn-danger rounded-pill px-4 py-2 ms-lg-3 ms-0 animated-btn fw-normal">Get Started</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section position-relative d-flex align-items-center justify-content-center text-center" style="min-height: 100vh; padding-top: 110px;">
-    <video class="hero-bg-video position-absolute w-100 h-100 top-0 start-0 object-fit-cover" src="statics/media/videos/Data Analytics Background 1 - SehCode Consultancy Services LLP (720p, h264).mp4" autoplay loop muted playsinline style="z-index:0;"></video>
-    <div class="hero-overlay" style="position:absolute;inset:0;background:linear-gradient(rgba(1,22,39,0.55), rgba(1,22,39,0.55));z-index:1;"></div>
-    <div class="container hero-content py-5" style="position:relative;z-index:3;">
+  <section id="home" class="hero-section position-relative d-flex align-items-center justify-content-center text-center">
+    <video class="hero-bg-video" src="statics/media/videos/Data Analytics Background 1 - SehCode Consultancy Services LLP (720p, h264).mp4" autoplay loop muted playsinline poster="statics/media/images/working-1.jpg"></video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content py-5">
       <h1 class="fw-bold mb-3 display-4 display-md-3 text-white" data-anim="fade-up">Streamline and Optimize Your Daily Task Management</h1>
       <p class="lead text-white-50 mb-4" data-anim="fade-up">Real-time KPIs, employee accountability, and automated performance tracking on one platform.</p>
       <div class="d-flex gap-3 justify-content-center flex-wrap" data-anim="zoom-in">
@@ -100,7 +100,7 @@
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <h2 class="fw-bold text-white mb-3">Introducing LYNEX by OpticoreAI</h2>
-          <p class="text-white-75 mb-3">LYNEX is a product of OpticoreAI — a cloud-based solution purpose-built for daily task management and performance visibility.</p>
+          <p class="text-white-75 mb-3">LYNEX is a product of OpticoreAI — a Web-based solution purpose-built for daily task management and performance visibility.</p>
           <p class="text-white-75 mb-0" style="text-align: justify;">It connects your operational tools and data sources into a secure, unified workspace — delivering actionable insights into tasks, teams, and KPIs to support informed, real-time decisions.</p>
         </div>
         <div class="col-lg-6">
@@ -115,55 +115,73 @@
     <div class="container py-lg-4">
       <h2 class="fw-bold text-center mb-4">Our Partners</h2>
       <p class="text-center text-muted mb-4">Trusted by forward-thinking organizations.</p>
-      <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover" aria-label="Partners logos carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row g-4 align-items-center justify-content-center">
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
-              </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center d-none d-lg-block">
+      <div class="partners-marquee position-relative" aria-label="Partners logos carousel">
+        <div class="marquee-track">
+          <div class="marquee-group d-flex align-items-center">
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
                 <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
               </div>
             </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/factory.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/ipop1.png" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/working-1.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/factory.jpg" alt="Partner logo" loading="lazy" decoding="async">
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <div class="row g-4 align-items-center justify-content-center">
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+          <div class="marquee-group d-flex align-items-center" aria-hidden="true">
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="" loading="lazy" decoding="async">
               </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/factory.jpg" alt="" loading="lazy" decoding="async">
               </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/ipop1.png" alt="" loading="lazy" decoding="async">
               </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="" loading="lazy" decoding="async">
               </div>
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center d-none d-lg-block">
-                <img class="partners-logo img-fluid" src="statics/media/images/logo.jpg" alt="Partner logo" loading="lazy" decoding="async">
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/working-1.jpg" alt="" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="marquee-item px-2 px-md-3">
+              <div class="bg-white border rounded-3 p-3 p-md-4 d-flex align-items-center justify-content-center">
+                <img class="partners-logo img-fluid" src="statics/media/images/factory.jpg" alt="" loading="lazy" decoding="async">
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
   </section>
@@ -172,21 +190,21 @@
   <section id="delivers" class="py-5 bg-white" data-anim="fade-up">
     <div class="container py-lg-4">
       <h2 class="fw-bold text-center mb-5">OpticoreAI Platform Delivers</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="h-100 p-4 border rounded-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-md-4">
+        <div class="col">
+          <div class="h-100 p-4 border rounded-3 hover-lift">
             <h5 class="fw-semibold mb-2">Reporting and analytics</h5>
             <p class="mb-0" style="text-align: justify;">Generate visual reports and perform detailed statistical analysis to track employees’ performance, measure improvements, and communicate results effectively.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="h-100 p-4 border rounded-3">
+        <div class="col">
+          <div class="h-100 p-4 border rounded-3 hover-lift">
             <h5 class="fw-semibold mb-2">Remote accessibility</h5>
             <p class="mb-0" style="text-align: justify;">Access the software platform securely from anywhere, allowing for remote monitoring and decision-making on the go.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="h-100 p-4 border rounded-3">
+        <div class="col">
+          <div class="h-100 p-4 border rounded-3 hover-lift">
             <h5 class="fw-semibold mb-2">Actionable insights</h5>
             <p class="mb-0" style="text-align: justify;">Gain valuable insights from aggregated data to identify optimization opportunities, improve processes, and drive efficiency.</p>
           </div>
