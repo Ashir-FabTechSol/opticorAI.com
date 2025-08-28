@@ -58,8 +58,8 @@ section[id] {
   padding: 0.25rem 0.6rem;
 }
 .navbar-logo {
-  max-width: 140px;
-  max-height: 80px;
+  max-width: 190px;
+  max-height: 110px;
   height: auto;
   width: auto;
   transition: max-width 0.2s, max-height 0.2s;
@@ -222,11 +222,11 @@ section h2 {
 
 /* ========== Partners ========== */
 #partners .partners-logo {
-  max-height: 170px;
+  max-height: 200px;
   width: auto;
   object-fit: contain;
   /* filter: grayscale(100%); */
-  opacity: 0.7;
+  opacity: 0.9;
   transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 #partners .partners-logo:hover {
@@ -426,8 +426,8 @@ section h2 {
 
 @media (max-width: 575.98px) {
   .navbar-logo {
-    max-width: 110px;
-    max-height: 60px;
+    max-width: 150px;
+    max-height: 90px;
   }
 }
 
