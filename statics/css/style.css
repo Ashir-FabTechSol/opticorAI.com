@@ -164,13 +164,69 @@ section h2 {
   margin-bottom: 0.5rem;
 }
 
+/* Polished cards and lists for Features/Benefits */
+.content-card {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(1, 22, 39, 0.06);
+}
+.content-card:hover {
+  box-shadow: var(--shadow-md);
+}
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.check-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+.check-list li::before {
+  content: "\f26e"; /* bi-check2-circle */
+  font-family: 'bootstrap-icons';
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}
+.section-illustration {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+  border: 1px solid rgba(1, 22, 39, 0.06);
+  padding: clamp(8px, 0.6vw, 14px);
+  height: clamp(240px, 38vw, 460px);
+  width: 100%;
+  object-fit: contain;
+}
+.section-illustration:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 991.98px) {
+  .section-illustration {
+    height: clamp(200px, 50vw, 360px);
+  }
+}
+@media (max-width: 575.98px) {
+  .section-illustration {
+    height: clamp(180px, 58vw, 300px);
+  }
+}
+
 /* ========== Partners ========== */
 #partners .partners-logo {
-  max-height: 64px;
+  max-height: 170px;
   width: auto;
   object-fit: contain;
   /* filter: grayscale(100%); */
-  opacity: 0.8;
+  opacity: 0.7;
   transition: filter 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 #partners .partners-logo:hover {
