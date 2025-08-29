@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/optijdbe/public_html
+    - /bin/rsync -a --delete \
+        --exclude='.git*' --exclude='.github' --exclude='.cpanel.yml' \
+        ./ $DEPLOYPATH/
