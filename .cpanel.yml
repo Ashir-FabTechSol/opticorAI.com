@@ -2,15 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/optijdbe/public_html
-    - /bin/rsync -a --delete \
+    - |
+      /bin/rsync -a --delete \
         --exclude='.git*' --exclude='.github' --exclude='.cpanel.yml' \
-        ./ $DEPLOYPATH/
-
-
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/optijdbe/public_html
-    - /bin/find "$DEPLOYPATH" -mindepth 1 -delete
-    - /bin/cp -R ./ "$DEPLOYPATH"/
-    - /bin/rm -rf "$DEPLOYPATH/.git" "$DEPLOYPATH/.cpanel.yml"
+        ./ "$DEPLOYPATH/"
