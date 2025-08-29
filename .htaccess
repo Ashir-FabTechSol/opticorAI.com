@@ -1,30 +1,25 @@
-RewriteEngine On
-
-# Force HTTPS
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Make www primary
-RewriteCond %{HTTP_HOST} ^opticorai\.com$ [NC]
-RewriteRule ^ https://www.opticorai.com%{REQUEST_URI} [L,R=301]
-
-# Force www
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Serve index.html by default
+# Use index.html by default and stop directory listing
+Options -Indexes -MultiViews
 DirectoryIndex index.html
 
-# Cache static assets (optional but helpful)
+RewriteEngine On
+# Canonical: always HTTPS + www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.opticorai\.com$ [NC]
+RewriteRule ^ https://www.opticorai.com%{REQUEST_URI} [L,R=301]
+
+# Ensure the root URL renders the homepage
+RewriteRule ^$ index.html [L]
+
+# (Optional) Static asset caching
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 7 days"
   ExpiresByType application/javascript "access plus 7 days"
   ExpiresByType image/jpeg "access plus 30 days"
-  ExpiresByType image/png "access plus 30 days"
-  ExpiresByType image/gif "access plus 30 days"
+  ExpiresByType image/png  "access plus 30 days"
   ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/gif  "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
   ExpiresByType video/mp4 "access plus 30 days"
 </IfModule>
-
-
